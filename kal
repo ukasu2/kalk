@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <input type="number" id="a" > <br>
+        <input type="number" id="b"> <br>
+        <input type="button" value="+" onclick="dodawanie()"> 
+        <input type="button" value="-" onclick="odejmowanie()"> 
+        <input type="button" value="*" onclick="mnozenie()"> 
+        <input type="button" value="/" onclick="dzielenie()"> 
+        <input type="button" value="^" onclick="potengowanie()"> 
+
+
+        <script>
+            function dodawanie(){
+         var liczba1 = Number(document.getElementById('a').value);
+         var liczba2 = Number(document.getElementById('b').value);
+         var suma = liczba1 + liczba2
+         document.write("wynik" + " "  + suma);
+            }
+
+            function odejmowanie(){
+         var liczba1 = Number(document.getElementById('a').value);
+         var liczba2 = Number(document.getElementById('b').value);
+         var odejmowanie = liczba1 - liczba2
+         document.write("wynik" + " "  + odejmowanie);
+
+
+
+            }
+
+            function mnozenie(){
+         var liczba1 = Number(document.getElementById('a').value);
+         var liczba2 = Number(document.getElementById('b').value);
+         var mnozenie = liczba1 * liczba2
+         document.write("wynik" + " "  + mnozenie);
+
+
+
+            }
+
+            function dzielenie(){
+         var liczba1 = Number(document.getElementById('a').value);
+         var liczba2 = Number(document.getElementById('b').value);
+         var dzielenie = liczba1 / liczba2
+         document.write("wynik" + " "  + dzielenie);
+
+
+
+            }
+
+            function potengowanie(){
+         var liczba1 = Number(document.getElementById('a').value);
+         var liczba2 = Number(document.getElementById('b').value);
+         var potengowanie = Math.pow(liczba1,liczba2)  ;                   
+         
+         document.write("wynik" + " "  + potengowanie);
+
+
+
+            }
+        </script>
+        
+    </form>
+</body>
+</html>
